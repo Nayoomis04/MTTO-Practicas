@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - UTM</title>
+  <link rel="stylesheet" href="/CSS/login.css">
+  <link rel="icon" href="../IMAGENES/UTM_LOGO.png">
+</head>
+<body>
+  <header>
+    <article>     
+      <img src="../IMAGENES/TECNM_LOGO.png" id="imglogotec" alt="imglogotec">
+    </article>
+    <article>
+      <ul>
+        <li><span class="icono_integrante"><img src="IMAGENES/INTEGRANTE_LOGO.png" alt="Edgar"><span class="tooltip">Beltran Lopez Edgar Ramon</span></span></li>
+        <li><span class="icono_integrante"><img src="IMAGENES/INTEGRANTE_LOGO.png" alt="Jeylen"><span class="tooltip">Garcia Felix Jeylen Isai</span></span></li>
+        <li><span class="icono_integrante"><img src="IMAGENES/INTEGRANTE_LOGO.png" alt="Vanessa"><span class="tooltip">Medrano Urias Vanessa Guadalupe</span></span></li>
+        <li><span class="icono_integrante"><img src="IMAGENES/INTEGRANTE_LOGO.png" alt="Nahomy"><span class="tooltip">Castro Moldreth Nahomy Rios</span></span></li>
+        <li><span class="icono_integrante"><img src="IMAGENES/INTEGRANTE_LOGO.png" alt="Emmanuel"><span class="tooltip">Tizoc Beltran Jose Emmanuel</span></span></li>
+      </ul>
+    </article>
+  </header>
+
+  <section id="fondologin">
+    <img src="../IMAGENES/FONDO_LOGIN.png" id="imgfondologin" alt="imgfondologin">
+  </section>
+
+  <section id="login">
+    <img src="../IMAGENES/UTM_LOGO2.png" id="imglogo2" alt="imglogo2">
+    <form id="formLogin">
+      <article class="input-group">
+        <img src="../IMAGENES/IC_USUARIO.png" class="icLogin" alt="icUsuario">
+        <input type="text" name="usuario" placeholder="Usuario...">
+      </article>
+      <article class="input-group">
+        <img src="../IMAGENES/IC_CONTRASEÑA.png" class="icLogin" alt="icContraseña">
+        <input type="password" name="password" placeholder="Contraseña...">
+      </article>
+      <p id="error-msg" class="error-login">Usuario o contraseña estan mal.</p>
+      <button type="submit" class="btn-login">Ingresar</button>
+    </form>
+  </section>
+
+  <footer>
+    <span>INGENIERÍA DE SOFTWARE</span>
+    <span>M.C MARTHA ESTELA VALENZUELA TIRADO</span>
+  </footer>
+  <script src="CONTROLADORES/loginControlador.js"></script>
+</body>
+</html>

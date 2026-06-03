@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Materias - UTM</title>
+    <link rel="stylesheet" href="../CSS/reg_mat.css">
+    <link rel="icon" href="../IMAGENES/UTM_LOGO.png">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <img src="../IMAGENES/TECNM_LOGO.png" class="logotecnm" alt="logotecnm">
+                <a href="../login.html" class="logo">Coordinador</a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../VISTAS/registrar_materias.html">Registrar Materias</a></li>
+                        <li><a href="../VISTAS/registrar_grupos.html">Registrar Grupos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="contenido-principal">
+        <section class="contacto">
+            <h2>Registrar Materia</h2>
+            <p id="msg-materia" style="text-align:center; min-height:20px; margin-top:1px; margin-bottom:20px;"></p>
+            <form class="formulario" id="formMateria">
+                <div class="fila">
+                    <div class="campo">
+                        <label>Nombre de la materia</label>
+                        <input type="text" id="nombreMateria" placeholder="Ej: Ing. de SW">
+                    </div>
+                    <div class="campo">
+                        <label>Semestre</label>
+                        <input type="number" id="semestreMateria" placeholder="Ej: 8" min="1" max="12">
+                    </div>
+                </div>
+                <button type="submit">Guardar Materia</button>
+            </form>
+        </section>
+        <section class="tabla-section">
+            <h2>Materias Registradas</h2>
+            <div class="tabla-scroll">
+                <table class="tabla-materias">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Semestre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla-materias">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

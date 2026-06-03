@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Materias - UTM</title>
+    <link rel="stylesheet" href="../CSS/alumno.css">
+    <link rel="icon" href="../IMAGENES/UTM_LOGO.png">
+    <script src="../proteger.js"></script>
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <img src="../IMAGENES/TECNM_LOGO.png" class="logotecnm" alt="logotecnm">
+                <a href="../login.html" class="logo">Alumno</a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../VISTAS/grupos_alumno.html">Grupos Disponibles</a></li>
+                        <li><a href="../VISTAS/kardex_alumno.html">Mis Materias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenido-principal">
+        <p id="msg-alumno" style="text-align:center; min-height:20px; margin:10px 0;"></p>
+        <div id="contenido-alumno">
+            <section class="tabla-section">
+                <h2>Mis Materias Inscritas</h2>
+                <div class="tabla-scroll">
+                    <table class="tabla-materias">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Materia</th>
+                                <th>Grupo</th>
+                                <th>Docente</th>
+                                <th>Dias</th>
+                                <th>Horario</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo-tabla-kardex">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

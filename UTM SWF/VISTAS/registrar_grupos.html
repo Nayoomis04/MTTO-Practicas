@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Grupos - UTM</title>
+    <link rel="stylesheet" href="/CSS/reg_grupos.css">
+    <link rel="icon" href="../IMAGENES/UTM_LOGO.png">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <img src="../IMAGENES/TECNM_LOGO.png" class="logotecnm" alt="logotecnm">
+                <a href="../login.html" class="logo">Coordinador</a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../VISTAS/registrar_materias.html">Registrar Materias</a></li>
+                        <li><a href="../VISTAS/registrar_grupos.html">Registrar Grupos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="contenido-principal">
+        <section class="contacto">
+            <h2>Registrar Grupo</h2>
+            <p id="msg-grupo" style="text-align:center; min-height:20px; margin-top:1px; margin-bottom:20px;"></p>
+            <form class="formulario" id="formGrupo">
+
+                <div class="fila">
+                    <div class="campo">
+                        <label>Materia</label>
+                        <select id="materiaGrupo">
+                            <option value="">Selecciona una materia</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Nombre del grupo</label>
+                        <input type="text" id="nombreGrupo" placeholder="Ej: Grupo A">
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="campo">
+                        <label>Docente</label>
+                        <input type="text" id="docenteGrupo" placeholder="Ej: Juan Perez">
+                    </div>
+                    <div class="campo">
+    <label>Días</label>
+    <ul id="diasGrupo" style="list-style:none; padding:0; margin:0;">
+        <li><label><input type="checkbox" value="Lunes"> Lunes</label></li>
+        <li><label><input type="checkbox" value="Martes"> Martes</label></li>
+        <li><label><input type="checkbox" value="Miercoles"> Miércoles</label></li>
+        <li><label><input type="checkbox" value="Jueves"> Jueves</label></li>
+        <li><label><input type="checkbox" value="Viernes"> Viernes</label></li>
+    </ul>
+</div>
+                </div>
+                <div class="fila">
+                    <div class="campo">
+                        <label>Hora inicio</label>
+                        <input type="time" id="horaInicio">
+                    </div>
+                    <div class="campo">
+                        <label>Hora fin</label>
+                        <input type="time" id="horaFin">
+                    </div>
+                    <div class="campo">
+                        <label>Cupo máximo</label>
+                        <input type="number" id="cupoGrupo" placeholder="Ej: 30" min="1">
+                    </div>
+                </div>
+
+                <button type="submit">Guardar Grupo</button>
+            </form>
+        </section>
+        <section class="tabla-section">
+            <h2>Grupos Registrados</h2>
+            <div class="tabla-scroll">
+                <table class="tabla-materias">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Materia</th>
+                            <th>Grupo</th>
+                            <th>Docente</th>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Cupo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla-grupos">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
